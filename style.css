@@ -1,0 +1,136 @@
+body, html{
+    font-family: 'Caviar Dreams';
+    margin: 0%;
+    height: 100%;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+        grid-template-rows: 180px auto 180px ;
+        grid-template-columns: 1fr 4fr;
+}
+@media only screen and (max-width: 850px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 180px 90px auto 180px;
+        grid-template-columns: auto;
+    }
+}
+@media only screen and (max-width: 450px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 180px auto 180px;
+        grid-template-columns: auto; 
+    }
+}
+.card{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    align-items: center;
+    border: yellow 3px  solid;
+    background-color: rgb(47, 165, 47);
+    width: 300px;
+    height: 450px;
+    border-radius: 50px;
+}
+.mae{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img-prod{
+    width: 300px;
+}
+.header{
+    grid-area: header;
+    background-color: blue;
+    display: flex;
+}
+.main{
+    grid-area: main;
+    background-color: darkgreen;
+}
+.footer{
+    grid-area: footer;
+    background-color: dimgray;
+}
+#vitality{
+    border: black 3px  solid;
+    border-radius: 10px;
+    background-color: black;
+}
+#legacy{
+    border: black 3px solid;
+    border-radius: 10px;
+    background-color: white;
+}
+#mouz{
+    border: black 3px solid;
+    border-radius: 10px;
+    background-color: white;
+}
+#faze_clan{
+    border: black 3px  solid;
+    border-radius: 10px;
+    background-color: white;
+}
+#spirit{
+    border: black 3px  solid;
+    border-radius: 10px;
+    background-color: white;
+}
+#lynn_vision{
+    border: black 3px  solid;
+    border-radius: 10px;
+    background-color: white;
+}
+.div-2{
+    margin: 0px;
+    height: 15px;
+    background-color: black;
+    color: black;
+}
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url(caviar_dreams/CaviarDreams.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.logo{
+    margin-top: 80px;
+    margin-right: 300px;
+    margin-left: 30px;
+}
+.menu{
+    margin-top: 80px;
+    margin-right: 300px;
+}
+.sobreNos{
+    margin-top: 80px;
+}
+.carrinho{
+    width: 120px;
+    height: 90px;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+.login{
+    margin-left: 300px;
+}
