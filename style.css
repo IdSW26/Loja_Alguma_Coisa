@@ -162,7 +162,7 @@ a:hover{
 #header_esq{
     display: flex;
     gap: 80px;
-    margin-left: 40%;
+    margin-left: auto;
 }   
 .fds{
     justify-content: center;
@@ -219,4 +219,9 @@ a:hover{
     border-radius: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
+}
+#carrinho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

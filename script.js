@@ -7,3 +7,6 @@ function avisaLogin(){
 function avisaCompra(){
     alert("Compra realizada com sucesso!");
 }  
+function adicionarCarrinho(){
+    alert("Produto adicionado ao carrinho com sucesso")
+}
