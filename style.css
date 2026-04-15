@@ -6,11 +6,11 @@ body, html{
 body{
     display: grid;
     grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer";
-        grid-template-rows: 180px auto 180px ;
-        grid-template-columns: 1fr 4fr;
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 150px auto 180px ;
+        grid-template-columns: auto;
 }
 @media only screen and (max-width: 850px){
     body{
@@ -19,7 +19,7 @@ body{
         "header"
         "main"
         "footer";
-        grid-template-rows: 180px 90px auto 180px;
+        grid-template-rows: 150px auto 180px;
         grid-template-columns: auto;
     }
 }
@@ -30,10 +30,11 @@ body{
         "header"
         "main"
         "footer";
-        grid-template-rows: 180px auto 180px;
+        grid-template-rows: 150px auto 180px;
         grid-template-columns: auto; 
     }
 }
+
 .card{
     margin: 10px;
     display: flex;
@@ -45,10 +46,27 @@ body{
     align-items: center;
     border: yellow 3px  solid;
     background-color: rgb(47, 165, 47);
-    width: 300px;
-    height: 450px;
+    width: 270px;
+    height: 470px;
     border-radius: 50px;
 }
+@media only screen and (max-width: 850px){
+    .card{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 35px;
+        margin-right: 40px;
+        margin-bottom: 30px;
+        align-items: center;
+        border: yellow 3px  solid;
+        background-color: rgb(47, 165, 47);
+        width: 240px;
+        height: 420px;
+    }
+}
+
 .mae{
     padding-top: 50px;
     display: flex;
@@ -56,7 +74,7 @@ body{
     justify-content: center;
 }
 .img-prod{
-    width: 300px;
+    width: 290px;
 }
 .header{
     grid-area: header;
@@ -71,42 +89,6 @@ body{
     grid-area: footer;
     background-color: dimgray;
 }
-#vitality{
-    border: black 3px  solid;
-    border-radius: 10px;
-    background-color: black;
-}
-#legacy{
-    border: black 3px solid;
-    border-radius: 10px;
-    background-color: white;
-}
-#mouz{
-    border: black 3px solid;
-    border-radius: 10px;
-    background-color: white;
-}
-#faze_clan{
-    border: black 3px  solid;
-    border-radius: 10px;
-    background-color: white;
-}
-#spirit{
-    border: black 3px  solid;
-    border-radius: 10px;
-    background-color: white;
-}
-#lynn_vision{
-    border: black 3px  solid;
-    border-radius: 10px;
-    background-color: white;
-}
-.div-2{
-    margin: 0px;
-    height: 15px;
-    background-color: black;
-    color: black;
-}
 @font-face {
     font-family: 'Caviar Dreams';
     src: url(caviar_dreams/CaviarDreams.ttf);
@@ -114,24 +96,127 @@ body{
     font-style: normal;
 }
 .logo{
-    margin-top: 80px;
-    margin-right: 10%;
-    margin-left: 10%;
-}
-.menu{
-    margin-top: 80px;
-    margin-left: 17%;
+    height: 170px;
+    width: 220px;
 }
 .sobreNos{
-    margin-top: 80px;
-    margin-left: 100%;
+    margin-top: 65px;
+    font-size: x-large;
 }
 .carrinho{
-    width: 120px;
-    height: 90px;
-    margin-top: 50px;
-    margin-left: 200%;
+    width: 70px;
+    height: 60px;
+    margin-top: 45px;
 }
 .login{
-    margin-left: 30%;
+    margin-top: 20px;
+    width: 90px;
+    height: 110px;
+}
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: black;
+}
+.bemVindo{
+    text-align: center;
+    margin: 0px;
+    height: 60px;
+    background-color: brown;
+}
+.galeria{
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+}
+.galeria img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}   
+#descricao{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#nome{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#preco{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.addCarrinho{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#header_esq{
+    display: flex;
+    gap: 80px;
+    margin-left: 40%;
+}   
+.fds{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 3px solid black;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.fds-linha{
+    background-color: black;
+    border: black 3px solid;
+}
+.inputs{
+    margin-bottom: 5px;
+    border-radius: 10px;
+    height: 30px;
+}
+#input-ult{
+    margin-bottom: 15px;
+}
+.botao{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(1, 35, 230);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.card-2{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    align-items: center;
+    border: yellow 3px  solid;
+    background-color: rgb(47, 165, 47);
+    width: 70%;
+    height: 170px;
+    border-radius: 50px;
+}
+.img-prod-2{
+    width: 150px;
+    height: 150px;
+}
+.finalizar-compra{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(1, 35, 230);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
